@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>PHP Learning</title>
+  
+  
+  <link rel='stylesheet prefetch' href='https://fonts.googleapis.com/css?family=Open+Sans:600'>
+      <link rel="stylesheet" href="style.css">
+  
+</head>
+<body>
+  <div class="login-wrap">
+  <div class="login-html">
+    <input id="tab-1" type="radio" name="tab" class="sign-in" checked><label for="tab-1" class="tab">Connexion</label>
+    <input id="tab-2" type="radio" name="tab" class="sign-up"><label for="tab-2" class="tab"></label>
+    <div class="login-form">
+      <form class="sign-in-htm" action="./api/user/login.php" method="GET">
+        <div class="group">
+          <label for="user" class="label">Utilisateur</label>
+          <input id="username" name="username" type="text" class="input">
+        </div>
+        <div class="group">
+          <label for="pass" class="label">Mot de passe</label>
+          <input id="password" name="password" type="password" class="input" data-type="password">
+        </div>
+        <div class="group">
+          <label for="account" class="label">Profil</label>
+          <select id="account" name="accountType" class="account">
+            <option value="Adminsitrateur" selected>Administrateur</option>
+            <option value="comptable">Comptable</option>
+            <option value="enseignant">Enseignant</option>
+            <option value="directeur">Directeur</option>
+            <option value="etudiant">Etudiant</option>
+          </select>
+        </div>
+        <div class="group">
+          <input id="check" type="checkbox" class="check" checked>
+          <label for="check"><span class="icon"></span> Garder ma session ouverte</label>
+        </div>
+        <div class="group">
+          <input type="submit" class="button" value="Se connecter">
+        </div>
+        <div class="hr"></div>
+        <div class="foot-lnk">
+          <a href="#forgot">Mot de passe oublié?</a>
+        </div>
+      </form>
+
+</body>
+</html>
